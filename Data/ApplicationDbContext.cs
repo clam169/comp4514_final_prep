@@ -31,8 +31,9 @@ namespace final_mock.Data
     {
       if (!optionsBuilder.IsConfigured)
       {
-        var serverVersion = new MySqlServerVersion(new Version(8, 0, 0));
-        optionsBuilder.UseMySql("server=localhost; userid=root; pwd=secret; port=3333; database=mock; SslMode=none;", serverVersion);
+        // var serverVersion = new MySqlServerVersion(new Version(8, 0, 0));
+        optionsBuilder.UseSqlServer("Server=tcp:127.0.0.1,1444;Database=SchoolDB;UID=sa;PWD=SqlPassword!;");
+        base.OnConfiguring(optionsBuilder);
       }
     }
   }

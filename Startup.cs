@@ -12,12 +12,10 @@ namespace FinalMock.Function
     public override void Configure(IFunctionsHostBuilder builder)
     {
 
-      string connStr = Environment.GetEnvironmentVariable("ConnectionStrings:MySQL");
-
-      var serverVersion = new MySqlServerVersion(new Version(8, 0, 0));
+      string connStr = Environment.GetEnvironmentVariable("ConnectionStrings:Toons");
 
       builder.Services.AddDbContext<ApplicationDbContext>(
-        options => options.UseMySql(connStr, serverVersion));
+                    options => SqlServerDbContextOptionsExtensions.UseSqlServer(options, connStr));
 
     }
   }
