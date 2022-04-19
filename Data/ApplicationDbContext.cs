@@ -33,7 +33,7 @@ namespace final_mock.Data
       {
         // var serverVersion = new MySqlServerVersion(new Version(8, 0, 0));
         optionsBuilder.UseSqlServer("Server=tcp:127.0.0.1,1444;Database=SchoolDB;UID=sa;PWD=SqlPassword!;");
-        base.OnConfiguring(optionsBuilder);
+        // base.OnConfiguring(optionsBuilder);
       }
     }
   }

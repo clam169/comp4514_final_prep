@@ -11,7 +11,7 @@ using final_mock.Data;
 namespace final_mock.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220419054427_m1")]
+    [Migration("20220419055010_m1")]
     partial class m1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
