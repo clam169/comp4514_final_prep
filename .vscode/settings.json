@@ -1,0 +1,16 @@
+{
+    "azureFunctions.deploySubpath": "bin/Release/net6.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)",
+    "workbench.colorCustomizations": {
+        "sash.hoverBorder": "#53b2f6",
+        "tab.activeBorder": "#53b2f6",
+        "titleBar.activeBackground": "#229cf4",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#229cf499",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#229cf4"
+}
